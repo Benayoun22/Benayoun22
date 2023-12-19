@@ -1,0 +1,157 @@
+*, html  {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(225, 222, 222);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Nova Square', sans-serif;
+    font-weight: bold;
+}
+
+/* THE MAIN CONTAINER */
+ section {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    background-color: #e0eeed;
+    padding-block-start: 130px;
+    padding-inline-start: 50px;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+/* THE STATEMENT DISPLAYED ON THE PAGE*/
+.info {
+    font-size: 0.7rem;
+    color: grey;
+    font-weight: 700;
+    line-height: 20px;
+    width: 270px;
+    height: 50px;
+    word-wrap: break-word;
+}
+
+.second-div{
+    background-color: #fff;
+    width: 390px;
+    height: 500px;
+    margin-left: 80px;
+    margin-top: -70px;
+    box-shadow: 0px 4px 50px 0px rgba(3.59, 8.13, 19.13, 0.10);
+    border-radius: 5px;    
+}
+
+
+/* STYLING OF THE FORM BEGINS HERE */
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-item {
+    margin-block-start: 20px;
+    margin-inline-start: 30px;
+    margin-block-end: 15px;
+    flex: 0 0 35%;  
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select{
+    display: block;
+    color: grey;
+    width: 100%;
+    padding: 6px;
+
+&:hover {
+    cursor: pointer;
+    border: 3px solid rgb(53, 53, 183);
+}
+
+}
+
+.arrange {
+    margin-inline-start: 30px;
+    width: 78%;
+    margin-block-end: 15px;
+}
+
+button {
+    background: #2EC4B6;
+    color: #fff;
+    padding: 6px;
+    border: 1px solid #2EC4B6;
+    border-radius: 4px;
+}
+
+.paragraph {
+    margin-inline-start: 37px;
+}
+
+p a {
+    color: #2EC4B6;
+}
+
+.second-info {
+    display: none;
+}
+
+
+/* USING MEDIA QUERIES TO GET A RESPONSIVE SCREEN FOR MOBILE USERS*/
+
+@media screen and (max-width: 480px) {
+    section {
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       width: 375px;
+       height: 900px;
+       padding: 0;
+       font-size: 12px;
+       font-family: 'Alegreya', serif;
+       font-weight: bold;
+    }
+
+    .first-div {
+        padding-inline-start: 40px;
+        margin-block-start: 20px;
+        margin-block-end: 15px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .second-info{
+        display: contents;
+        color: #737373;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 25px;
+    }
+
+    .second-div {
+      width: 325px;
+      height: 630px;
+      margin: 0 auto;
+
+    }
+
+    form {
+       display: block;
+    }
+
+    input, select{
+        width: 70%;
+    }
+
+    .arrange {
+        width: 62%;
+    }
+
+    .paragraph{
+        margin-block-start: 30px;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NWALI_CHUKWUEBUKA_EMMANUEL_1</title>
+    <link rel="stylesheet" href="first_Design.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Nova+Square&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <!-- THIS IS THE MAIN CONTAINER -->
+
+        <!-- FIRST DIV INSIDE MAIN CONTAINER -->
+        <div class="first-div">
+          <img
+            class="my_logo"
+            src="./Images/Logo.png"
+            width="50px"
+            height="50px"
+            alt="A logo"
+          />
+          <h2>For Individuals</h2>
+
+          <p class="info">
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity and improving, organization wellness.
+          </p>
+
+          <p class="second-info">Inspiring wholesome harmony for the mind,<br> body and spirit, for everyone, everywhere.</p>
+        </div>
+
+        <!-- SECOND CONTAINER INSIDE MAIN CONTAINER -->
+        <div class="second-div">
+
+          <!-- FORM COLLECTION OF INDIVIDUAL INFORMATION -->
+          <form action="www.altschoolAfrica.com" method="post">
+
+            <!-- FIRST NAME -->
+            <div class="form-item">
+              <label for="first_name">First Name</label>
+              <input
+                id="first_name"
+                type="text"
+                name="first_name"
+                placeholder="Chukwuebuka"
+                required
+              />
+            </div>
+
+              <!-- LAST NAME -->
+            <div class="form-item">
+              <label for="last_name" class="right">Last Name</label>
+              <input
+                type="text"
+                id="last_name"
+                class="right"
+                name="last_name"
+                required
+              />
+            </div>
+
+              <!-- GENDER -->
+            <div class="form-item">
+              <label for="gender">Gender</label>
+              <select name="gender-selection" id="gender">
+                <option value="select here" selected>Select here</option>
+              </select>
+            </div>
+
+            <!-- DATE OF BIRTH -->
+            <div class="form-item">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" name="dob" required />
+            </div>
+
+            <!-- WEIGHT -->
+            <div class="form-item">
+              <label for="weight">Weight(KG)</label>
+              <input
+                type="number"
+                id="weight"
+                name="weight"
+                placeholder="Enter weight"
+              />
+            </div>
+
+            <!-- HEIGHT -->
+            <div class="form-item">
+              <label for="height">Height(CM)</label>
+              <input
+                type="number"
+                id="height"
+                name="height"
+                placeholder="Enter height here"
+              />
+            </div>
+
+            <!-- ACTIVITY -->
+            <label for="activity"
+              ><span class="arrange">Activity Level</span></label
+            >
+            <select class="arrange" name="activity_level" id="activity">
+              <option value="select here">Select here</option>
+            </select>
+
+            <!-- PASSWORD -->
+            <label for="pwd"><span class="arrange">Password</span></label>
+            <input
+              type="password"
+              id="pwd"
+              class="arrange"
+              name="pwd"
+              required
+            />
+
+            <button class="arrange" type="submit">Register</button>
+
+            <p style="font-size: 8px" class="paragraph">
+              By clicking Register, you agree to our
+              <a href="#">Terms of Use</a> and our
+              <a href="#">Privacy Policy</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
